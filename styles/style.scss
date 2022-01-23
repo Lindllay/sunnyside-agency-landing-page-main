@@ -1,0 +1,212 @@
+:root{
+    //    primary colors 
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --graphic-design-text: hsl(167, 40%, 24%);
+    --photography-text: hsl(198, 62%, 26%);
+    --footer: hsl(168, 34%, 41%);
+
+    //     neutral colors
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue:hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+
+   //      fonts
+    --barlow: 'Barlow', sans-serif;
+    --fraunces: 'Fraunces', serif;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    width: 500;
+    margin: 0 auto;
+}
+
+
+.header{
+    background-image: url(../images/mobile/image-header.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 550px;
+    .top{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 1rem;
+    }
+    .desktop-nav{
+        display: none;
+    }
+    h1{
+        font-family: var(--fraunces);
+        font-weight: 900;
+        font-size: 2.5rem;
+        letter-spacing: 7px;
+        color: white;
+        text-transform: uppercase;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    }
+    .strzalka{
+        margin-top: 2rem;
+    }
+}
+.egg{
+    background-image: url(../images/mobile/image-transform.jpg);
+    background-size: cover;
+    height: 300px;
+}
+.cup{
+    background-image: url(../images/mobile/image-stand-out.jpg);
+    background-size: cover;
+    height: 300px;
+}
+.sekcja{
+    padding: 1.5rem;
+}
+.tytul{
+    padding: 2rem 0;;
+    font-family: var(--fraunces);
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--very-dark-desaturated-blue);
+}
+.transformBrand .przezroczysty{
+    color:var(--dark-grayish-blue)
+}
+.standOut .przezroczysty{
+    color:var(--dark-grayish-blue)
+}
+
+.przezroczysty{
+    font-family: var(--barlow);
+    color: rgba($color: #000000, $alpha: 0.7);
+    line-height: 1.7;
+}
+.wysoki-tekst{
+    font-size: 18px;
+    margin-bottom: 2rem;
+}
+a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--fraunces);
+    font-weight: 900;
+    display: inline-block;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+a::after{
+    position:absolute;
+    left:0;
+    content: " ";
+    display: block;
+    border-bottom: 10px rgb(255, 255, 153) solid;
+    border-radius: 5px;
+    width: 130px;
+    top:12px;
+    left:-10px;
+    z-index: -5;
+}
+.standOut a::after{
+    border-bottom: 10px rgb(255, 179, 169) solid;
+}
+
+.cherries{
+    background-image: url(../images/mobile/image-graphic-design.jpg);
+    background-size: cover;
+    height: 700px;
+}
+.orange{
+    background-image: url(../images/mobile/image-photography.jpg);
+    background-size: cover;
+    height: 640px;
+
+
+}
+.cherries, .orange, h1{
+    h1{
+        font-family: var(--fraunces);
+    }
+}
+.content{
+    position: relative;
+    top: 60%;
+}
+.fourImages{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    img{
+        height: 100%;
+        width: 100%;
+        }
+    }
+.clientTestimonials{
+    >p{
+        color: var(--grayish-blue);
+        text-transform: uppercase;
+        font-family: var(--fraunces);
+        letter-spacing: 5px;
+        font-size: 1.125rem;
+        font-weight: 900;
+    }
+
+    .testimonialsHeader{
+        padding: 4rem 1.5rem;
+    }
+    img{
+        border-radius: 5rem;
+        width: 20%;
+        margin-bottom: 1rem;
+    }
+}
+.testimonials-paragraph{
+    font-size: 18px;
+    padding: 1.5rem;
+    font-family: var(--fraunces);
+    font-weight: 600;
+    line-height: 1.7;
+    color: var(--very-dark-grayish-blue);
+}
+.person-name{
+    font-family: var(--fraunces);
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 8px;
+}
+.person-title{
+    margin-bottom: 5rem;
+    color: var(--dark-grayish-blue);
+    font-weight: 500;
+}
+
+.footer{
+    background-color: rgb(116, 211, 182);
+    padding: 4rem 2rem;
+    .svg{
+        fill: rgba($color: #000000, $alpha: 0.5);
+        transform: scale(1.5);
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding-top: 2rem;
+        font-size: 1.125rem;
+        font-family: var(--barlow);
+        color: rgba($color: #000000, $alpha: 0.5);
+        margin-bottom: 5rem;
+    }
+    .social{
+        img{
+            margin: 0.5rem;
+        }
+    }
+}
