@@ -302,14 +302,13 @@ a::after {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: right;
-        -ms-flex-pack: right;
-            justify-content: right;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
     position: absolute;
     background: none;
     height: auto;
     width: 100%;
-    margin: 0 auto;
     left: 0;
     top: 0;
     -webkit-transform: none;
@@ -376,6 +375,8 @@ a::after {
     grid-area: header;
     background-image: url(../images/desktop/image-header.jpg);
     height: 100vh;
+    width: 100%;
+    position: relative;
   }
   .header h1 {
     font-size: 3rem;
